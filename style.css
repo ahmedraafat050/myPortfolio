@@ -10,7 +10,41 @@
     padding: 0px;
 }
 
+.bars {
+    display: none;
+}
 
+.sidenav {
+    height: fit-content;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 69px;
+    right: 0;
+    background-color: #3a6cf483;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+}
+
+.sidenav a {
+    padding: 8px 8px 32px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #eee;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
 
 header {
     background-color: #f0f0f0;
@@ -254,18 +288,40 @@ section{
     background-image: url('images/individual.jpg');
 }
 .six{
-    background-image: url('images/background-image.png');
+    background-image: url('images/Screenshot 2022-07-01 215926.png');
 }
 
 .seven{
-    background-image: url('images/background-image.png');
+    background-image: url('images/template-two.png');
+    position: relative;
+}
+
+.seven::after {
+    content: "";
+    background-color: #3a6cf483;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .eight{
     background-image: url('images/background-image.png');
+    position: relative;
 }
-.nine{
-    background-image: url('images/background-image.png');
+
+.eight::after {
+    content: "";
+    background-color: #3a6cf483;
+    width: 100%;
+    height:100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
 }
 
 .contact{
@@ -274,14 +330,41 @@ section{
 }
 
 footer {
-    padding: 10px 50px;
-    background-color: #000016;
+    background-image: url(images/subscribe.jpg);
     color: #fff;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     width: 100%;
     align-items: center;
+    position: relative;
 }
+
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 70%);
+    z-index: 9;
+}
+
+.footer-text, .social-icons ,.social-icons + p {
+    z-index: 10;
+}
+
+.footer-text p {
+    padding:0px 0px ;
+    margin: 24px 0px;
+    padding:16px 0px ;
+    border-bottom: 1px solid #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+footer p,footer .social-icons {
+    margin-bottom: 32px;
+}
+
 footer span{
     color:#3a6cf4;
     padding-left: 10px;
@@ -303,12 +386,25 @@ footer span{
 
 
 @media (max-width:1023px){
+
+    .bars {
+        display: block;
+    }
+
+    .sidenav {
+        display: block;
+    }
+
+    .navigation {
+        display: none;
+    }
+
     header{
         padding: 12px 8px;
-        width: 100vw;
+        width: 100%;
     }
     .logo{
-        font-size: 1em;
+        font-size: 2em;
     }
     .navigation a{
         margin-left: 3px;
@@ -381,25 +477,32 @@ footer span{
 }
 
 @media (max-width: 641px){
-    body{
-        font-size: 10px;
-    }
     header{
-        padding: 8px 4px;
+        padding: 16px 8px;
     }
+
+    
+    .bars {
+        display: block;
+    }
+
+    .sidenav {
+        display: block;
+        top: 76px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
     .logo{
-        font-size: 1em;
-    }
-    .navigation a{
-        margin-left: 1px;
-        padding: 3px 1px;
-        font-size: 3px;
+        font-size: 1.6em;
     }
 
     .main-btn{
         padding: 8px 11px;
         border-radius: 5px;
-        font-size: 8px;
+        font-size: 12px;
         margin-top: 0px;
         letter-spacing: 1px;
         margin-bottom: 20px;
@@ -408,7 +511,7 @@ footer span{
 
     section{
         padding: 5px 10px;
-        width: 100vw -10px;
+        width: 100%;
         min-height: 100vh;
     }
     
@@ -425,8 +528,27 @@ footer span{
 }
 
 @media(max-width:300px){
-    body{font-size: 10px;}
-        
+
+
+    .main {
+        text-align: center;
+    }
+    .bars {
+        display: block;
+    }
+
+    .sidenav {
+        display: block;
+        top: 76px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .contact .card ,.content .card {
+        width: 100%;
+    }
 }
 
 
