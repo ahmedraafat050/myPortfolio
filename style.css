@@ -175,7 +175,7 @@ section{
 
 .skill svg {
     display: block;
-    margin:auto 32px 64px 32px;
+    margin:0px;
     padding: auto;
     transition: 0.3s;
 }
