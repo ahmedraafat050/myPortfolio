@@ -24,12 +24,13 @@
     background-color: rgba(0 0 0 / 90%);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 36px;
+    padding-bottom: 16px;
     display: none;
 }
 
 .sidenav a {
-    padding: 8px 8px 32px 32px;
+    padding: 8px 0px 16px 0px;
     text-decoration: none;
     font-size: 20px;
     color: var(--mainColor);
@@ -489,7 +490,7 @@ footer span{
     }
 
     .sidenav {
-        top: 60px;
+        top: 61px;
     }
 
     .navigation {
@@ -534,7 +535,7 @@ footer span{
     }
 
     .sidenav {
-        top: 60px;
+        top: 61px;
     }
 
     .navigation {
