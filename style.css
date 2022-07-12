@@ -261,7 +261,7 @@ section{
     margin-right: 30px;
     margin-bottom: 30px;
     background-size: cover;
-    background-position: left top;
+    background-position: center;
     border-radius: 10px;
     transition: 0.5s ease;
 }
@@ -292,35 +292,14 @@ section{
 
 .seven{
     background-image: url('images/template-two.png');
-    position: relative;
-}
-
-.seven::after {
-    content: "";
-    background-color: #3a6cf483;
-    width: 100%;
-    height: 20%;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
 }
 
 .eight{
-    background-image: url('images/background-image.png');
-    position: relative;
+    background-image: url('images/signup.png');
 }
 
-.eight::after {
-    content: "";
-    background-color: #3a6cf483;
-    width: 100%;
-    height:100%;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    border-radius: 10px;
+.nine{
+    background-image: url('images/task-advanced-card.png');
 }
 
 .contact{
