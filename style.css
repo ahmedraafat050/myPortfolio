@@ -302,6 +302,10 @@ section{
     background-image: url('images/task-advanced-card.png');
 }
 
+.ten {
+    background-image: url('images/Reminder\ Menu.png');
+}
+
 .contact{
     display: block;
     background-color: #f0f0f0;
