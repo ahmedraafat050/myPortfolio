@@ -1,0 +1,129 @@
+.navbar .navbar-toggler,
+.navbar .navbar-toggler:focus,
+.navbar .navbar-toggler:hover {
+  color: blue;
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.navbar {
+  z-index: 5375376537;
+}
+
+.navbar .logo {
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.landing {
+  background-image: url("../images/backgrounds/background-image.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important; 
+  background-color: #0d6efd;
+  border-radius: 2px;
+}
+
+.landing .social-media svg {
+  transition: all ease 0.2s;
+}
+
+.landing .social-media svg:hover {
+  transform: scale(1.1);
+  color: #0d6efd !important;
+}
+
+.skills svg {
+  transition: all ease 0.2s;
+}
+
+.skills svg:hover {
+  transform: scale(1.1);
+}
+
+.services .icon-holder {
+  height: 200px;
+}
+
+.services .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services .icon-holder .number {
+  color: #eff7fa;
+  font-size: 12rem;
+}
+
+
+.project a{
+  text-decoration: none;
+}
+
+.project{
+  width: 18.75em;
+  height: 18.75em;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+
+.project:hover{
+  transform: scale(1.1);
+}
+
+.one{
+  background-image: url('../images/projects/page_one.jpg');
+
+}
+.two{
+  background-image: url('../images/projects/gymso-fitness.jpg');
+}
+.three{
+  background-image: url('../images/projects/news-app.png');
+}
+.four{
+  background-image: url('../images/projects/job4u.png');
+}
+.five{
+  background-image: url('../images/projects/individual.jpg');
+}
+.six{
+  background-image: url('../images/projects/Screenshot 2022-07-01 215926.png');
+}
+
+.seven{
+  background-image: url('../images/projects/template-two.png');
+}
+
+.eight{
+  background-image: url('../images/projects/signup.png');
+}
+
+.nine{
+  background-image: url('../images/projects/task-advanced-card.png');
+}
+
+.ten {
+  background-image: url('../images/projects/Reminder\ Menu.png');
+}
+
+.eleven {
+  background-image: url("../images/projects/LogInUi.png");
+}
+
+.bondi {
+  background-image: url("../images/projects/bondi.png");
+}
+
+.nouval {
+  background-image: url("../images/projects/nouval.png");
+}
+
