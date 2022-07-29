@@ -74,7 +74,7 @@
 }
 
 .project:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .one{
@@ -124,4 +124,3 @@
 .nouval {
   background-image: url("../images/projects/nouval.png");
 }
-
